@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Business Card Maker
+	</title>
+	<script type="text/javascript" src="businessCard.js"></script>
+	<link rel="stylesheet" type="text/css" href="businessCard.css">
+</head>
+<body>
+	<header>
+		<h1 id = "titleHeader">Business Card Maker</h1>
+	</header>
+
+	<main>
+		<article id = 'inputs' >
+			<div>
+				<p>Company Name:</p>
+				<form>
+					<input type="text" name="compName" id = 'companyNameInput' onkeyup = "inputCompany()">
+				</form>
+			</div>
+			<div>
+				<p>Name:</p>
+				<form>
+					<input type="text" name="Name" id = 'yourNameInput' onkeyup="inputName()">
+				</form>
+			</div>
+			<div>
+				<p>Role:</p>
+				<form>
+					<input type="text" name="jobT" id = 'roleInput' onkeyup = "inputRole()">
+				</form>
+			</div>
+			<div>
+				<p>Email address:</p>
+				<form>
+					<input type="Email" name="emailadrs" id = 'emailInput' onkeyup="inputEmail()">
+				</form>
+			</div>
+			<div>
+				<p>Telephone Number:</p>
+				<form>
+					<input type="tel" name="telNum" id = 'phoneNumInput' onkeyup="inputPhone()">
+				</form>
+			</div>
+
+			<p>Background Color:</p>
+			<form>
+				<input type="color" name= "bgcolor" id = "backgroundColorInput" onchange="changeBackgroundColor()">
+			</form>
+
+			<p>Text Color:</p>
+			<form>
+				<input type="color" name="txtColor" id = "textColorInput" onchange="changeTextColor()">
+			</form>	
+			<div>
+				<p>Text Alignment</p>
+				<button id = 'text-left' onclick = 'textAlignLeft()'>Left</button>
+				<button id= 'text-center' onclick = 'textAlignCenter()'>Center</button>
+				<button id = 'text-right' onclick = 'textAlignRight()'>Right</button>
+			</div>
+
+			<div>
+				<input type="submit" name="submit" onclick = 'formSubmit()'>
+				<input type="reset" name="reset" onclick = 'formReset()'>
+			</div>
+		</article>	
+	</main>
+	<aside id = 'cardPreview'>
+		<article id = 'card'>
+			<h4 id = 'company'>Company Name</h4>
+			<h5 id = 'yoName'>Your Name</h5>
+			<p id = 'jobTitle'>Job Title</p>
+			<p id = 'emailAdd'>Email Address</p>
+			<p id = 'phoneNum'>Phone Number</p>
+		</article>
+	</aside>
+
+
+</body>
+</html>

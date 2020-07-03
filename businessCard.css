@@ -1,0 +1,17 @@
+#card{
+			border: 1px solid black;
+			height: 2in;
+			width: 3.5in;
+			
+}
+#inputs{
+	background-color: #eee;
+	width: 55%;
+	float: left;
+	margin-right: 0px;
+}
+#cardPreview{
+	float: right;
+	width: 30%;
+	background-color: #eee;
+}
